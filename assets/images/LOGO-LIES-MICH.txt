@@ -1,0 +1,19 @@
+LOGO EINFÜGEN
+=============
+
+Lege dein Logo-Bild in DIESEM Ordner (assets/images/) ab.
+
+Dateiname: logo.png  (genau so benennen!)
+Unterstützte Formate: .png (empfohlen, wegen Transparenz), .jpg, .svg, .webp
+Empfohlene Größe: ca. 300 × 100 Pixel (Querformat, Hintergrund transparent)
+
+Das Logo erscheint dann automatisch ganz oben links im Navigationsmenü,
+neben dem Firmennamen "UnTangle – Junior Company".
+
+Falls kein Logo vorhanden ist, wird nur der Textname angezeigt –
+die Seite funktioniert in beiden Fällen fehlerfrei.
+
+Logo-Pfad in config.json ändern:
+Falls du die Datei anders nennst oder in einem Unterordner ablegst,
+passe in config.json den Wert "logo" unter "company" an:
+  "logo": "assets/images/mein-logo.png"

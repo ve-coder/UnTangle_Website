@@ -1,0 +1,24 @@
+ANLEITUNG – BILDER EINFÜGEN
+===========================
+
+So fügst du Bilder für die Anleitung ein:
+
+1. Speichere deine Fotos/Bilder in DIESEM Ordner (assets/images/anleitung/)
+
+2. Benenne sie genau so:
+   - schritt1.jpg  → Bild für Schritt 1
+   - schritt2.jpg  → Bild für Schritt 2
+   - schritt3.jpg  → Bild für Schritt 3
+   - schritt4.jpg  → Bild für Schritt 4
+
+3. Unterstützte Formate: .jpg, .jpeg, .png, .webp
+
+4. Empfohlene Größe: ca. 800 × 600 Pixel (Seitenverhältnis 4:3)
+
+5. Sobald die Dateien hier gespeichert sind, erscheinen sie automatisch
+   auf der Website – kein weiterer Schritt notwendig.
+
+BILDER UMBENENNEN / TEXT ÄNDERN:
+Öffne config.json und suche den Abschnitt "anleitung".
+Dort kannst du Titel, Text und Bildpfade jedes Schritts anpassen.
+

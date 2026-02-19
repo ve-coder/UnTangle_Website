@@ -1,0 +1,16 @@
+PRODUKTBILD EINFÜGEN – UnTangle One
+=====================================
+
+Lege dein Produktfoto in DIESEM Ordner (assets/images/produkt/) ab.
+
+Dateiname: untangle-one.jpg  (genau so benennen!)
+Unterstützte Formate: .jpg, .jpeg, .png, .webp
+Empfohlene Größe: ca. 800 × 600 Pixel (Seitenverhältnis 4:3)
+
+Das Bild erscheint dann automatisch in der Produktkarte auf der Website.
+Falls kein Foto vorhanden ist, wird automatisch das generierte Vorschaubild angezeigt –
+kein Fehler, kein weißes Rechteck.
+
+Anderen Dateinamen oder -pfad verwenden?
+Öffne config.json und ändere folgenden Wert im Abschnitt "products":
+  "image": "assets/images/produkt/mein-foto.jpg"
