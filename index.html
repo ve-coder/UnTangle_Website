@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Meta-Angaben werden via JS aus config.json geladen -->
+  <title>UnTangle – Junior Company</title>
+  <meta name="description" content="UnTangle – Junior Company der HTL Jenbach. Handgefertigte 3D-gedruckte Kabelorganizer aus PLA. Jetzt bestellen." />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading overlay (verschwindet sobald config.json geladen ist) -->
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+    <p style="margin-top:16px;font-size:.85rem;color:#94a3b8;">Wird geladen …</p>
+  </div>
+
+  <!-- Toast notification -->
+  <div id="toast" class="toast"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#start" class="nav-logo">
+        <img id="nav-logo-img" src="" alt="UnTangle Logo" style="display:none;height:36px;width:auto;object-fit:contain;vertical-align:middle;margin-right:8px;" />
+        <span class="nav-logo-text"><span>Un</span>Tangle<small class="logo-tagline"> – Junior Company</small></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <!-- Wird via JS befüllt -->
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#bestellen" class="btn btn-primary" id="nav-order-btn">Bestellen</a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav-mobile" id="nav-mobile">
+      <!-- Wird via JS befüllt -->
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="start">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge" id="hero-badge">Junior Company · HTL Jenbach</div>
+        <h1 id="hero-headline">
+          Schluss mit<br/><span>Kabelchaos.</span>
+        </h1>
+        <p id="hero-sub">UnTangle hält deine Kabel organisiert – elegant, kompakt und nachhaltig aus PLA gefertigt.</p>
+        <div class="hero-actions">
+          <a href="#bestellen" class="btn btn-primary" id="hero-cta">Jetzt bestellen</a>
+          <a href="#produkte" class="btn btn-ghost" id="hero-cta2">Mehr erfahren</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span>2</span>
+            <span>Produkte</span>
+          </div>
+          <div class="hero-stat">
+            <span>ab 5 €</span>
+            <span>Preis</span>
+          </div>
+          <div class="hero-stat">
+            <span>100 %</span>
+            <span>PLA</span>
+          </div>
+          <div class="hero-stat">
+            <span>lokal</span>
+            <span>Produktion</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card">
+          <img src="assets/images/product-one.svg" alt="UnTangle One Kabelorganizer" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUKTE ===================== -->
+  <section id="produkte">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Produkte</span>
+        <h2 id="products-headline">Unsere Produkte</h2>
+        <p id="products-sub">3D-gedruckte Kabelorganizer – handgefertigt in Jenbach.</p>
+      </div>
+
+      <div class="products-grid" id="products-grid">
+        <!-- Wird via JS aus config.json gerendert -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ANLEITUNG ===================== -->
+  <section id="anleitung">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Anleitung</span>
+        <h2 id="anleitung-headline">Anleitung</h2>
+        <p id="anleitung-sub">So verwendest du deinen UnTangle ganz einfach.</p>
+      </div>
+
+      <div class="anleitung-grid" id="anleitung-grid">
+        <!-- Wird via JS aus config.json gerendert -->
+      </div>
+
+      <div class="anleitung-hint">
+        <span>💡</span>
+        <p>Bilder austauschen: Speichere deine Fotos im Ordner <code>assets/images/anleitung/</code> mit den Dateinamen <code>schritt1.jpg</code>, <code>schritt2.jpg</code>, <code>schritt3.jpg</code>. Danach werden sie hier automatisch angezeigt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PREISE ===================== -->
+  <section id="preise">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Preise</span>
+        <h2 id="pricing-headline">Preise</h2>
+        <p id="pricing-sub">Faire Preise, Mengenrabatte für Unternehmen und Schulen.</p>
+      </div>
+
+      <div class="pricing-grid" id="pricing-grid">
+        <!-- Wird via JS gerendert -->
+      </div>
+
+      <!-- Addon -->
+      <div class="discounts-block" id="addon-block" style="margin-bottom:28px;">
+        <!-- Wird via JS gerendert -->
+      </div>
+
+      <!-- Rabatttabelle -->
+      <div class="discounts-block">
+        <h3>Mengenrabatte für Unternehmen</h3>
+        <p class="text-muted" style="font-size:.88rem;margin-bottom:16px;">Bei größeren Bestellungen profitiert ihr von gestaffelten Rabatten. Bitte gibt die gewünschte Menge im Bestellformular an.</p>
+        <table class="discount-table">
+          <thead>
+            <tr>
+              <th>Menge</th>
+              <th>Rabatt</th>
+              <th>Beispiel (UnTangle One, 50 Stk.)</th>
+            </tr>
+          </thead>
+          <tbody id="discount-tbody">
+            <!-- Wird via JS gerendert -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BESTELLEN ===================== -->
+  <section id="bestellen">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Bestellung</span>
+        <h2 id="order-headline">Bestellen</h2>
+        <p id="order-sub">Füll das Formular aus – wir melden uns innerhalb von 24 Stunden.</p>
+      </div>
+
+      <div class="order-layout">
+
+        <!-- Formular -->
+        <div>
+          <div class="order-form-wrap" id="order-form-wrap">
+            <form id="order-form" action="https://formspree.io/f/xpqjjwkl" method="POST" novalidate>
+
+              <!-- Berechnete Felder – werden via JS vor dem Absenden befüllt -->
+              <input type="hidden" name="_subject"         id="hf-subject" />
+              <input type="hidden" name="bestellnummer"    id="hf-bestellnummer" />
+              <input type="hidden" name="verwendungszweck" id="hf-verwendungszweck" />
+              <input type="hidden" name="bestelldatum"     id="hf-bestelldatum" />
+              <input type="hidden" name="variante"         id="hf-variante" />
+              <input type="hidden" name="gesamtpreis"      id="hf-gesamtpreis" />
+              <input type="hidden" name="versandkosten"    id="hf-versandkosten" />
+              <input type="hidden" name="mengenrabatt"     id="hf-mengenrabatt" />
+              <input type="hidden" name="lieferadresse"    id="hf-lieferadresse" />
+
+              <!-- ── Kundentyp ── -->
+              <div class="form-section-title">Kundentyp</div>
+
+              <div class="form-group" id="fg-customertype">
+                <label>Ich bestelle als *</label>
+                <div class="radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="customertype" id="ct-private" value="Privatperson" checked />
+                    <span>Privatperson</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="customertype" id="ct-company" value="Firma" />
+                    <span>Firma</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group" id="fg-companyname" style="display:none;">
+                <label for="companyname">Firmenname *</label>
+                <input type="text" id="companyname" name="companyname" placeholder="Muster GmbH" autocomplete="organization" />
+                <div class="error-msg" id="err-companyname">Bitte gib den Firmennamen ein.</div>
+              </div>
+
+              <!-- ── Kontaktdaten ── -->
+              <div class="form-section-title">Kontaktdaten</div>
+
+              <div class="form-row">
+                <div class="form-group" id="fg-firstname">
+                  <label for="firstname">Vorname *</label>
+                  <input type="text" id="firstname" name="firstname" placeholder="Max" autocomplete="given-name" />
+                  <div class="error-msg" id="err-firstname">Bitte gib deinen Vornamen ein.</div>
+                </div>
+                <div class="form-group" id="fg-lastname">
+                  <label for="lastname">Nachname *</label>
+                  <input type="text" id="lastname" name="lastname" placeholder="Mustermann" autocomplete="family-name" />
+                  <div class="error-msg" id="err-lastname">Bitte gib deinen Nachnamen ein.</div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group" id="fg-street">
+                  <label for="street">Straße *</label>
+                  <input type="text" id="street" name="street" placeholder="Musterstraße" autocomplete="address-line1" />
+                  <div class="error-msg" id="err-street">Bitte gib deine Straße ein.</div>
+                </div>
+                <div class="form-group fg-narrow" id="fg-houseno">
+                  <label for="houseno">Hausnummer *</label>
+                  <input type="text" id="houseno" name="houseno" placeholder="1" autocomplete="off" />
+                  <div class="error-msg" id="err-houseno">Pflichtfeld.</div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group fg-narrow" id="fg-plz">
+                  <label for="plz">PLZ *</label>
+                  <input type="text" id="plz" name="plz" placeholder="1234" autocomplete="postal-code" />
+                  <div class="error-msg" id="err-plz">Bitte PLZ angeben.</div>
+                </div>
+                <div class="form-group" id="fg-ort">
+                  <label for="ort">Ort *</label>
+                  <input type="text" id="ort" name="ort" placeholder="Musterstadt" autocomplete="address-level2" />
+                  <div class="error-msg" id="err-ort">Bitte Ort angeben.</div>
+                </div>
+              </div>
+
+              <div class="form-group" id="fg-land">
+                <label for="land">Land *</label>
+                <select id="land" name="land" autocomplete="country">
+                  <option value="">– Bitte wählen –</option>
+                  <option value="AT">🇦🇹 Österreich</option>
+                  <option value="DE">🇩🇪 Deutschland (+10 € Versand)</option>
+                </select>
+                <div class="error-msg" id="err-land">Bitte wähle dein Land (nur AT / DE möglich).</div>
+                <div class="form-hint">Versand nur nach Österreich und Deutschland.</div>
+              </div>
+
+              <div class="form-group" id="fg-email">
+                <label for="email">E-Mail-Adresse *</label>
+                <input type="email" id="email" name="email" placeholder="max@beispiel.at" autocomplete="email" />
+                <div class="error-msg" id="err-email">Bitte gib eine gültige E-Mail-Adresse ein.</div>
+              </div>
+
+              <div class="form-group" id="fg-phone">
+                <label for="phone">Telefonnummer *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+43 677 12345678" autocomplete="tel" />
+                <div class="error-msg" id="err-phone">Bitte gib eine Telefonnummer ein.</div>
+              </div>
+
+              <!-- ── Produkt ── -->
+              <div class="form-section-title">Produkt &amp; Konfiguration</div>
+
+              <div class="form-row">
+                <div class="form-group" id="fg-color-top">
+                  <label for="color-top">Primärfarbe *</label>
+                  <select id="color-top" name="color-top">
+                    <option value="">– Bitte wählen –</option>
+                    <!-- Wird via JS befüllt -->
+                  </select>
+                  <div class="error-msg" id="err-color-top">Bitte Primärfarbe wählen.</div>
+                </div>
+                <div class="form-group" id="fg-color-bottom">
+                  <label for="color-bottom">Sekundärfarbe *</label>
+                  <select id="color-bottom" name="color-bottom">
+                    <option value="">– Bitte wählen –</option>
+                    <!-- Wird via JS befüllt -->
+                  </select>
+                  <div class="error-msg" id="err-color-bottom">Bitte Sekundärfarbe wählen.</div>
+                </div>
+              </div>
+
+              <div class="form-group" id="fg-cable-qty">
+                <label for="cable-qty">Kabel <span id="cable-price-label"></span></label>
+                <input type="number" id="cable-qty" name="cable-qty" min="0" max="9999" value="0" placeholder="0" />
+                <div class="form-hint">USB – USBC, 1m, Grau &nbsp;|&nbsp; Anzahl 0 = kein Kabel</div>
+              </div>
+
+              <div class="form-group" id="fg-qty">
+                <label for="qty">Menge *</label>
+                <input type="number" id="qty" name="qty" min="1" max="9999" value="1" placeholder="1" />
+                <div class="form-hint" id="qty-hint">Ab 20 Stück gelten Mengenrabatte.</div>
+                <div class="error-msg" id="err-qty">Bitte gib eine gültige Menge ein (mind. 1).</div>
+              </div>
+
+              <!-- ── Preisvorschau ── -->
+              <div class="form-section-title">Preisvorschau</div>
+
+              <div class="price-preview" id="price-preview">
+                <div class="price-preview-row" id="pp-ordernr">
+                  <span>Bestellnummer</span><span id="pp-ordernr-val">–</span>
+                </div>
+                <div class="price-preview-row" id="pp-product">
+                  <span>Produkt</span><span>– €</span>
+                </div>
+                <div class="price-preview-row" id="pp-cable" style="display:none;">
+                  <span>Kabel-Set</span><span>– €</span>
+                </div>
+                <div class="price-preview-row discount" id="pp-discount" style="display:none;">
+                  <span>Mengenrabatt</span><span>– €</span>
+                </div>
+                <div class="price-preview-row" id="pp-shipping">
+                  <span>Versand</span><span>– €</span>
+                </div>
+                <div class="price-preview-row total" id="pp-total">
+                  <span>Gesamtbetrag</span><span>– €</span>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;">
+                Bestellung absenden
+              </button>
+
+              <p style="font-size:.78rem;color:var(--clr-muted);margin-top:12px;text-align:center;">
+                * Pflichtfelder. Zahlung per Banküberweisung. Kein Rückgaberecht möglich.
+              </p>
+            </form>
+          </div>
+
+          <!-- Erfolgsseite (eingeblendet nach Submit) -->
+          <div id="order-success">
+            <div class="success-icon">✓</div>
+            <h2 id="success-headline">Danke für deine Bestellung!</h2>
+            <p id="success-text" style="margin-top:8px;"></p>
+
+            <div class="order-summary" id="order-summary-box">
+              <!-- Zeilen werden via JS gerendert -->
+            </div>
+
+            <div class="iban-box" id="iban-box">
+              <h4>🏦 Bitte überweise an</h4>
+              <div class="iban-value" id="iban-display">– –</div>
+              <div class="iban-detail" id="iban-details"></div>
+              <div class="iban-actions">
+                <button class="copy-btn" id="copy-iban-btn">📋 IBAN kopieren</button>
+                <button class="copy-btn" id="copy-purpose-btn" style="background:var(--clr-dark);">📋 Verwendungszweck kopieren</button>
+                <button class="copy-btn" id="copy-summary-btn" style="background:var(--clr-dark);">📄 Zusammenfassung kopieren</button>
+              </div>
+            </div>
+
+            <!-- Bestellablauf -->
+            <div class="order-steps-info">
+              <div class="order-step-hint"><span class="step-badge">1</span> Bestellung abschicken</div>
+              <div class="step-sep">→</div>
+              <div class="order-step-hint"><span class="step-badge">2</span> Überweisung durchführen</div>
+              <div class="step-sep">→</div>
+              <div class="order-step-hint"><span class="step-badge">3</span> Versand nach Zahlungseingang</div>
+            </div>
+
+            <div class="action-buttons">
+              <button class="btn btn-secondary" id="new-order-btn">Neue Bestellung</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info-Sidebar -->
+        <div class="order-info">
+
+          <!-- Nächste Bestellnummer -->
+          <div class="info-card">
+            <h4><span class="info-icon">🔖</span> Deine Bestellnummer</h4>
+            <p style="font-size:1.5rem;font-weight:800;color:var(--clr-accent);letter-spacing:.06em;margin:8px 0 4px;" id="sidebar-order-number">–</p>
+            <p style="font-size:.8rem;color:var(--clr-muted);">Wird im Verwendungszweck und in der E-Mail verwendet.</p>
+          </div>
+
+          <!-- Ablauf -->
+          <div class="info-card">
+            <h4><span class="info-icon">📦</span> So funktioniert's</h4>
+            <div class="steps">
+              <div class="step"><div class="step-num">1</div><p>Formular ausfüllen und absenden.</p></div>
+              <div class="step"><div class="step-num">2</div><p>Betrag per Banküberweisung bezahlen.</p></div>
+              <div class="step"><div class="step-num">3</div><p>Nach Zahlungseingang wird produziert und versendet.</p></div>
+              <div class="step"><div class="step-num">4</div><p>Lieferzeit: <strong>5–21 Tage</strong>.</p></div>
+            </div>
+          </div>
+
+          <!-- Zahlungsdaten -->
+          <div class="info-card">
+            <h4><span class="info-icon">🏦</span> Zahlungsinformationen</h4>
+            <div class="payment-detail-row">
+              <span>Kontoinhaber</span>
+              <strong id="pi-kontoinhaber">–</strong>
+            </div>
+            <div class="payment-detail-row">
+              <span>IBAN</span>
+              <strong id="pi-iban" style="font-family:monospace;font-size:.88rem;">–</strong>
+            </div>
+            <div class="payment-detail-row">
+              <span>BIC</span>
+              <strong id="pi-bic">–</strong>
+            </div>
+            <div class="payment-detail-row">
+              <span>Verwendungszweck</span>
+              <strong id="pi-purpose" style="color:var(--clr-accent);">UnTangle-Order-…</strong>
+            </div>
+            <p style="font-size:.76rem;color:var(--clr-muted);margin-top:10px;">Genaue Bestellnummer nach dem Absenden.</p>
+          </div>
+
+          <!-- Versand & Rückgabe -->
+          <div class="info-card">
+            <h4><span class="info-icon">🚚</span> Versand &amp; Rückgabe</h4>
+            <ul class="shipping-list">
+              <li>🇦🇹 Österreich unter 20 € → <strong>5,00 € Versand</strong></li>
+              <li>🇦🇹 Österreich ab 20 € → <strong>Kostenloser Versand</strong></li>
+              <li>🇩🇪 Deutschland → <strong>10,00 € Versand</strong></li>
+              <li>🌍 Andere Länder → <strong>Kein Versand möglich</strong></li>
+            </ul>
+            <p style="margin-top:12px;font-size:.85rem;">⏱ Lieferzeit: <strong>5–21 Tage</strong> nach Zahlungseingang.</p>
+            <p style="margin-top:8px;font-size:.82rem;color:var(--clr-muted);">⚠️ <strong>Kein Rückgaberecht:</strong> Da alle Produkte individuell auf Bestellung gedruckt werden, ist eine Rückgabe oder ein Umtausch ausgeschlossen.</p>
+          </div>
+
+          <!-- Unternehmen -->
+          <div class="info-card">
+            <h4><span class="info-icon">🏢</span> Unternehmen</h4>
+            <p style="font-size:.875rem;font-weight:700;" id="info-company-name"></p>
+            <p style="font-size:.875rem;" id="info-company-address"></p>
+            <p style="font-size:.875rem;" id="info-contact-email"></p>
+            <p style="font-size:.78rem;color:var(--clr-muted);margin-top:8px;">Junior Company · HTL Jenbach · Schulprojekt 2026</p>
+            <p style="font-size:.78rem;color:var(--clr-muted);">Angaben dienen ausschließlich zu schulischen Übungszwecken.</p>
+          </div>
+
+          <!-- Fragen -->
+          <div class="info-card">
+            <h4><span class="info-icon">❓</span> Fragen?</h4>
+            <p style="font-size:.875rem;" id="info-contact-email2"></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ÜBER UNS ===================== -->
+  <section id="ueber-uns">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Über uns</span>
+        <h2 id="about-headline">Über uns</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-content">
+          <div id="about-paragraphs">
+            <!-- Wird via JS gerendert -->
+          </div>
+
+          <div class="values-list">
+            <div class="value-item">
+              <span class="value-icon">♻️</span>
+              <div>
+                <h4>Nachhaltigkeit</h4>
+                <p>Produktion aus PLA – biobasiert und kompostierbar.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">🏠</span>
+              <div>
+                <h4>Lokal produziert</h4>
+                <p>Jedes Stück wird in Jenbach gedruckt und geprüft.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon">🎓</span>
+              <div>
+                <h4>Schüler-Startup</h4>
+                <p>Entstanden als Schulprojekt – mit echtem Unternehmergeist.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual">
+          <div>
+            <p class="section-label" id="team-label">Das Team</p>
+            <div class="team-grid" id="team-grid">
+              <!-- Wird via JS gerendert -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== KONTAKT ===================== -->
+  <section id="kontakt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Kontakt</span>
+        <h2 id="contact-headline">Kontakt &amp; Impressum</h2>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-card">
+          <h3>Kontakt</h3>
+          <div class="contact-list" id="contact-list">
+            <!-- Wird via JS gerendert -->
+          </div>
+        </div>
+
+        <div class="impressum-card">
+          <h3 id="impressum-title">Impressum</h3>
+          <div id="impressum-body">
+            <!-- Wird via JS gerendert -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo"><span>Un</span>Tangle<small class="logo-tagline" style="color:#818cf8;"> – Junior Company</small></div>
+        <p class="footer-copy" id="footer-copy">
+          © <span id="footer-year"></span> UnTangle – Junior Company · HTL Jenbach
+        </p>
+        <div class="footer-links">
+          <a href="#start">Start</a>
+          <a href="#produkte">Produkte</a>
+          <a href="#kontakt">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

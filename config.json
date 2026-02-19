@@ -1,0 +1,133 @@
+{
+  "company": {
+    "name": "UnTangle",
+    "tagline": "Ordnung für deine Kabel.",
+    "logo": "assets/images/logo.png",
+    "email": "untangle67@gmail.com",
+    "iban": "AT00 0000 0000 0000 0000",
+    "bic": "XXXXXXXX",
+    "kontoinhaber": "UnTangle Junior Company",
+    "address": "Schalserstraße 43, 6200 Jenbach",
+    "phone": "+43 677 62763915",
+    "founded": "2026",
+    "school": "HTL Jenbach"
+  },
+  "products": [
+    {
+      "id": "one",
+      "name": "UnTangle One",
+      "price": 5.00,
+      "image": "assets/images/produkt/UnTangleOne.jpeg",
+      "description": "Der elegante Kabelorganizer für deinen Schreibtisch. Hält genau 1 Kabel sicher und ordentlich – kompakt, stabil, nachhaltig.",
+      "features": [
+        "Für 1 Kabel",
+        "Aus nachhaltigem PLA-Kunststoff",
+        "Maße: Ø 52 mm, Höhe 28 mm",
+        "Ober- und Unterteil in Wunschfarbe",
+        "Farben: Schwarz, Grün, Lila, Grau, Blau, Weiß"
+      ],
+      "colors": ["Schwarz", "Grün", "Lila", "Grau", "Blau", "Weiß"]
+    }
+  ],
+  "addons": [
+    {
+      "id": "cable",
+      "name": "1 × 1 m USB zu USB-C Kabel",
+      "price": 3.50,
+      "description": "Ein hochwertiges 1-m-USB-zu-USB-C-Kabel passend zu deinem Organizer."
+    }
+  ],
+  "discounts": [
+    { "minQty": 100, "percent": 10, "label": "ab 100 Stück: −10 %" },
+    { "minQty": 50,  "percent": 5,  "label": "ab 50 Stück: −5 %"  },
+    { "minQty": 20,  "percent": 3,  "label": "ab 20 Stück: −3 %"  }
+  ],
+  "shipping": {
+    "freeAbove": 20.00,
+    "cost": 3.90,
+    "label": "Versandkostenfrei ab 20 €"
+  },
+  "anleitung": [
+    {
+      "schritt": 1,
+      "title": "Schritt 1: Unterteil platzieren",
+      "text": "Lege das Unterteil des UnTangle auf eine flache Oberfläche. Die Öffnung zeigt nach oben.",
+      "image": "assets/images/anleitung/schritt1.jpeg"
+    },
+    {
+      "schritt": 2,
+      "title": "Schritt 2: Mittelteil auflegen",
+      "text": "Lege das Mittelteil auf das Unterteil. Achte darauf, dass die Aussparungen übereinanderliegen.",
+      "image": "assets/images/anleitung/schritt2.jpeg"
+    },
+    {
+      "schritt": 3,
+      "title": "Schritt 3: Kabel einlegen",
+      "text": "Führe dein Kabel durch die Öffnung des Mittelteils. Das Kabel liegt nun sicher und geordnet in der Halterung.",
+      "image": "assets/images/anleitung/schritt3.jpeg"
+    },
+    {
+      "schritt": 4,
+      "title": "Schritt 4: Oberteil aufsetzen",
+      "text": "Setze das Oberteil auf das Mittelteil. Es rastet ein und hält das Kabel sicher an Ort und Stelle. Fertig!",
+      "image": "assets/images/anleitung/schritt4.jpeg"
+    }
+  ],
+  "texts": {
+    "hero": {
+      "headline": "Schluss mit Kabelchaos.",
+      "subheadline": "UnTangle hält deine Kabel organisiert – elegant, kompakt und nachhaltig aus PLA gefertigt.",
+      "cta": "Jetzt bestellen",
+      "ctaSecondary": "Mehr erfahren"
+    },
+    "products": {
+      "headline": "Unsere Produkte",
+      "subheadline": "3D-gedruckte Kabelorganizer – handgefertigt in Jenbach."
+    },
+    "anleitung": {
+      "headline": "Anleitung",
+      "subheadline": "So verwendest du deinen UnTangle ganz einfach."
+    },
+    "pricing": {
+      "headline": "Preise",
+      "subheadline": "Faire Preise, Mengenrabatte für Unternehmen und Schulen."
+    },
+    "order": {
+      "headline": "Bestellen",
+      "subheadline": "Füll das Formular aus – wir melden uns innerhalb von 24 Stunden.",
+      "successHeadline": "Danke für deine Bestellung!",
+      "successText": "Bitte überweise den Betrag an die unten angegebene IBAN. Deine Bestellung wird nach Zahlungseingang bearbeitet."
+    },
+    "about": {
+      "headline": "Über uns",
+      "paragraphs": [
+        "Wir sind UnTangle – eine Junior Company der HTL Jenbach, entstanden im Rahmen eines Schulprojekts. Unser Ziel ist es, praktische Alltagsprobleme mit moderner 3D-Drucktechnologie zu lösen.",
+        "Unsere Kabelorganizer werden lokal aus umweltfreundlichem PLA-Kunststoff produziert. Jedes Stück wird sorgfältig gedruckt und kontrolliert, bevor es zu dir kommt.",
+        "Von Schülern für alle – wir beweisen, dass auch junge Unternehmer Qualitätsprodukte schaffen können."
+      ],
+      "teamLabel": "Das Team"
+    },
+    "contact": {
+      "headline": "Kontakt & Impressum",
+      "impressumTitle": "Impressum",
+      "impressumText": "UnTangle ist eine Junior Company im Rahmen eines Schulprojekts an der HTL Jenbach. Angaben gemäß österreichischem Unternehmensrecht. Dieses Unternehmen wurde ausschließlich zu Ausbildungszwecken gegründet und betreibt keinen gewerblichen Handel im rechtlichen Sinne."
+    }
+  },
+  "team": [
+    { "name": "Tizian Fischbach", "role": "CEO & Produktion" },
+    { "name": "Vincent Entner",   "role": "Finanzen & Marketing" }
+  ],
+  "meta": {
+    "siteTitle": "UnTangle – Junior Company",
+    "description": "UnTangle – handgefertigte 3D-gedruckte Kabelorganizer aus PLA. HTL Jenbach. Jetzt bestellen.",
+    "navLinks": [
+      { "label": "Start",      "href": "#start" },
+      { "label": "Produkte",   "href": "#produkte" },
+      { "label": "Anleitung",  "href": "#anleitung" },
+      { "label": "Preise",     "href": "#preise" },
+      { "label": "Bestellen",  "href": "#bestellen" },
+      { "label": "Über uns",   "href": "#ueber-uns" },
+      { "label": "Kontakt",    "href": "#kontakt" }
+    ]
+  }
+}
