@@ -4,9 +4,9 @@
     "tagline": "Ordnung für deine Kabel.",
     "logo": "assets/images/logo.png",
     "email": "untangle67@gmail.com",
-    "iban": "AT00 0000 0000 0000 0000",
-    "bic": "XXXXXXXX",
-    "kontoinhaber": "UnTangle Junior Company",
+    "iban": "AT22 3622 9000 0003 0049",
+    "bic": "RZTIAT22229",
+    "kontoinhaber": "Tizian Fischbach",
     "address": "Schalserstraße 43, 6200 Jenbach",
     "phone": "+43 677 62763915",
     "founded": "2026",
@@ -131,3 +131,4 @@
     ]
   }
 }
+
