@@ -24,9 +24,9 @@
         "Aus nachhaltigem PLA-Kunststoff",
         "Maße: Ø 52 mm, Höhe 28 mm",
         "Ober- und Unterteil in Wunschfarbe",
-        "Farben: Grau, Lila, Weiß, Grün, Dunkelgrün, Schwarz, skibidi epstein toilet"
+        "Farben: Grau, Lila, Weiß, Grün, Dunkelgrün, Schwarz"
       ],
-      "colors": ["Grau", "Lila", "Weiß", "Grün", "Dunkelgrün", "Schwarz, skibidi epstein toilet"]
+      "colors": ["Grau", "Lila", "Weiß", "Grün", "Dunkelgrün", "Schwarz"]
     }
   ],
   "addons": [
@@ -131,4 +131,5 @@
     ]
   }
 }
+
 
