@@ -26,7 +26,7 @@
         "Ober- und Unterteil in Wunschfarbe",
         "Farben: Grau, Lila, Weiß, Grün, Dunkelgrün, Schwarz"
       ],
-      "colors": ["Schwarz", "Grün", "Lila", "Grau", "Blau", "Weiß, skibidi epstein"]
+      "colors": ["Grau", "Lila", "Weiß", "Grün", "Dunkelgrün", "Schwarz"]
     }
   ],
   "addons": [
@@ -131,5 +131,3 @@
     ]
   }
 }
-
-
