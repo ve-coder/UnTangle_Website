@@ -585,11 +585,12 @@ async function handleFormSubmit(e) {
 
   // Bestellnummer vergeben
   const orderNumber = getNextOrderNumber();
-  const reference   = `UnTangle-Order-${orderNumber}`;
   const orderDate   = new Date().toLocaleDateString('de-DE', {
     day: '2-digit', month: '2-digit', year: 'numeric',
     hour: '2-digit', minute: '2-digit',
   });
+  const orderDateShort = new Date().toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+  const reference   = `${firstname} ${lastname} ${orderDateShort}`;
 
   // ─ Versteckte Felder befüllen ─
   document.getElementById('hf-subject').value        = `UnTangle Bestellung ${orderNumber} – ${firstname} ${lastname}`;
