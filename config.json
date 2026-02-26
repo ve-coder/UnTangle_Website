@@ -69,7 +69,7 @@
     {
       "schritt": 4,
       "title": "Schritt 4: Oberteil aufsetzen",
-      "text": "Setze das Oberteil auf das Mittelteil. Es rastet ein und hält das Kabel sicher an Ort und Stelle. Fertig!",
+      "text": "Setze das Oberteil auf das Mittelteil. Drehe die Mitte um das Kabel aufzuwickeln und ziehe an beiden Enden des Kabels um es wieder herauszubekommen!",
       "image": "assets/images/anleitung/schritt4.jpeg"
     }
   ],
@@ -131,5 +131,6 @@
     ]
   }
 }
+
 
 
