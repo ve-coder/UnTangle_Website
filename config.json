@@ -69,7 +69,7 @@
     {
       "schritt": 4,
       "title": "Schritt 4: Oberteil aufsetzen",
-      "text": "Setze das Oberteil auf das Mittelteil. Drehe die Mitte um das Kabel aufzuwickeln und ziehe an beiden Enden des Kabels um es wieder herauszubekommen!",
+      "text": "Setze das Oberteil auf das Mittelteil. Es rastet ein und hält das Kabel sicher an Ort und Stelle. Fertig!",
       "image": "assets/images/anleitung/schritt4.jpeg"
     }
   ],
@@ -115,7 +115,8 @@
   },
   "team": [
     { "name": "Tizian Fischbach", "role": "CEO & Produktion" },
-    { "name": "Vincent Entner",   "role": "Finanzen & Marketing" }
+    { "name": "Vincent Entner",   "role": "Finanzen & Marketing" },
+    { "name": "Felix Thaler",     "role": "Oberste Putzkraft" }
   ],
   "meta": {
     "siteTitle": "UnTangle – Junior Company",
@@ -131,6 +132,3 @@
     ]
   }
 }
-
-
-
