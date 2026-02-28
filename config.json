@@ -116,7 +116,7 @@
   "team": [
     { "name": "Tizian Fischbach", "role": "CEO & Produktion" },
     { "name": "Vincent Entner",   "role": "Finanzen & Marketing" },
-    { "name": "Felix Thaler",     "role": "Oberste Putzkraft" }
+    { "name": "Felix Thaler",     "role": "Produktion & Verkauf" }
   ],
   "meta": {
     "siteTitle": "UnTangle – Junior Company",
@@ -132,3 +132,4 @@
     ]
   }
 }
+
